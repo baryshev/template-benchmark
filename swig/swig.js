@@ -3,7 +3,9 @@ var compiled;
 var tplData;
 
 swig.init({
-	root: __dirname
+	root: __dirname,
+    autoescape: false,
+    cache: true
 });
 
 module.exports.prepare = function (data, done) {

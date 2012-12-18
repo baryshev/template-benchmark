@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<title>{{ title|raw }}</title>
+		<title>{{ title }}</title>
 	</head>
 	<body>
-		<p>{{ text|raw }}</p>
+		<p>{{ text }}</p>
 		{% if projects.length %}
 			{% for project in projects %}
-				<a href="{{ project.url|raw }}">{{ project.name|raw }}</a>
-				<p>{{ project.description|raw }}</p>
+				<a href="{{ project.url }}">{{ project.name }}</a>
+				<p>{{ project.description }}</p>
 			{% endfor %}
 		{% else %}
 			No projects
