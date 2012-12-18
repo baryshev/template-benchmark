@@ -5,10 +5,10 @@
 <body>
 <p><%- text %></p>
 <% if(projects.length) { %>
-    <% for (project in projects) { %>
+    <% _.each(projects, function(project) { %>
         <a href="<%- project.url %>"><%- project.name %></a>
         <p><%- project.description %></p>
-    <% } %>
+    <% }); %>
 <% } else { %>
 No projects
 <% } %>
