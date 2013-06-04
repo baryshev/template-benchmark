@@ -7,6 +7,7 @@
 - [Dust](https://github.com/linkedin/dustjs) v1.2.1 ([website](http://linkedin.github.com/dustjs/))
 - [Eco](https://github.com/sstephenson/eco) v1.1.0-rc-3
 - [ECT](https://github.com/baryshev/ect) v0.4.8 ([website](http://ectjs.com/))
+- [EGS](https://github.com/ckknight/egs) v0.1.3
 - [EJS](https://github.com/visionmedia/ejs) v0.8.3
 - [Fest](https://github.com/mailru/fest) v0.5.4
 - [Gaikan](https://github.com/Deathspike/gaikan) v1.3.4
