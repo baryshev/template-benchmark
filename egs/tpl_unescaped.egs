@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title><%=h title %></title>
+	</head>
+	<body>
+		<p><%=h text %></p>
+    <% for project in projects: %>
+			<a href="<%=h project.url %>"><%=h project.name %></a>
+			<p><%=h project.description %></p>
+		<% else: %>
+			No projects
+		<% end %>
+	</body>
+</html>
