@@ -72,19 +72,64 @@ var samples = [
 	{ name : 'ECT', sample : ect }
 ];
 
+var results = [];
+
+function showResultsPersent(label, prop) {
+	var i, l, per, minVal, arr = results.slice();
+	
+	function log(name, val, per) {
+		console.log('  ' + name + ': ' + val + 'ms - ' + per.toFixed(2) + '%');
+	}
+	
+	arr.sort(function (a, b) { return a[prop] - b[prop]; });
+	
+	minVal = arr[0][prop];
+	console.log(label);
+	
+	log(arr[0].name, minVal, 100);
+	
+	for (i = 1, l = arr.length; l > i; i += 1) {
+		if (minVal) {
+			per = (arr[i][prop] / minVal) * 100;
+		} else {
+			per = arr[i][prop] * 100;
+		}
+		
+		log(arr[i].name, arr[i][prop], per);
+	}
+	
+	console.log('');
+}
+
 var runTests = function () {
 	if (samples.length) {
 		var sample = samples.pop();
 		test(sample.name, sample.sample, function (err, name, result) {
 			testUnescaped(sample.name, sample.sample, function (err, name, resultUnescaped) {
+				var total = result + resultUnescaped,
+					s = {
+							name: name,
+							escaped: result,
+							unescaped: resultUnescaped,
+							total: total
+					};
+					
 				console.log(name);
 				console.log('  Escaped   : ' + result + 'ms');
 				console.log('  Unescaped : ' + resultUnescaped + 'ms');
-				console.log('  Total     : ' + (result + resultUnescaped) + 'ms');
+				console.log('  Total     : ' + total + 'ms');
 				console.log('');
+				
+				
+				results.push(s);
+				
 				runTests();
 			});
 		});
+	} else {
+		console.log('--------------');
+		showResultsPersent('Compare escaped', 'escaped');
+		showResultsPersent('Compare unescaped', 'unescaped');
 	}
 };
 
