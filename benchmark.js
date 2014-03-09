@@ -72,6 +72,12 @@ var samples = [
 	{ name : 'ECT', sample : ect },
 ];
 
+var results = [];
+var pad = function (val, num, pre) {
+	val = typeof val === 'string' ? val : '' + val;
+	while (val.length < num) val = (pre ? ' ' : '') + val + (pre ? '' : ' ');
+	return val;
+};
 var runTests = function () {
 	if (samples.length) {
 		var sample = samples.pop();
@@ -82,9 +88,30 @@ var runTests = function () {
 				console.log('  Unescaped : ' + resultUnescaped + 'ms');
 				console.log('  Total     : ' + (result + resultUnescaped) + 'ms');
 				console.log('');
+				results.push({
+					name: name,
+					escaped: result,
+					unescaped: resultUnescaped,
+					total: result + resultUnescaped
+				});
 				runTests();
 			});
 		});
+	} else {
+		console.log('Performance report for ' + count + ' templates (' + process.platform + '):\n');
+		results.sort(function (a, b) {
+			var x = a.total;
+			var y = b.total;
+			return x < y ? -1 : (x > y ? 1 : 0);
+		});
+		var fastest = results[0].total;
+		for (var i = 0; i < results.length; i += 1) {
+			var result = results[i];
+			var percentage = Math.round((100 / fastest * result.total) - 100);
+			console.log(pad(result.name, 20) +
+				' (' + pad(result.total, 5, true) + 'ms)' +
+				(i == 0 ? ' - fastest' : ' - ' + percentage + '% slower'));
+		}
 	}
 };
 

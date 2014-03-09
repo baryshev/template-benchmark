@@ -14,93 +14,46 @@
 - [Jade](https://github.com/visionmedia/jade) v0.28.1 ([website](http://jade-lang.com/))
 - [Swig](https://github.com/paularmstrong/swig) v0.13.5
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
-- [Gaikan](https://github.com/Deathspike/gaikan) v1.2.1
-
-## Test environment
-
-- CPU: Intel Core i5 450M 2.4Ghz
-- OS: Ubuntu Server 12.04
-- Node.JS version: 0.8.20
+- [Gaikan](https://github.com/Deathspike/gaikan) v2.0.0
 
 ## Results
 
-	Rendering 100000 templates:
+### Linux Ubuntu 12.04, NodeJS 0.10.26 (100.000x)
 
-	ECT
-	  Escaped   : 2296ms
-	  Unescaped : 136ms
-	  Total     : 2432ms
+	Gaikan               ( 2090ms) - fastest
+	ECT                  ( 2334ms) - 12% slower
+	Fest                 ( 2791ms) - 34% slower
+	Dust                 ( 3030ms) - 45% slower
+	doT                  ( 3940ms) - 89% slower
+	Hogan.js             ( 3977ms) - 90% slower
+	EJS without `with`   ( 5190ms) - 148% slower
+	Swig                 ( 5258ms) - 152% slower
+	Underscore           ( 6154ms) - 194% slower
+	Handlebars.js        ( 7255ms) - 247% slower
+	Eco                  ( 8315ms) - 298% slower
+	EJS                  ( 9059ms) - 333% slower
+	Jade without `with`  (10973ms) - 425% slower
+	CoffeeKup            (11062ms) - 429% slower
+	Jade                 (27295ms) - 1206% slower
 
-	Gaikan
-	  Escaped   : 3012ms
-	  Unescaped : 33ms
-	  Total     : 3045ms
+### Windows 7 x64 SP1, NodeJS 0.10.26 (100.000x)
 
-	Dust
-	  Escaped   : 2687ms
-	  Unescaped : 423ms
-	  Total     : 3110ms
-
-	Hogan.js
-	  Escaped   : 3464ms
-	  Unescaped : 793ms
-	  Total     : 4257ms
-
-	Fest
-	  Escaped   : 4319ms
-	  Unescaped : 278ms
-	  Total     : 4597ms
-
-	EJS without `with`
-	  Escaped   : 4744ms
-	  Unescaped : 494ms
-	  Total     : 5238ms
-
-	doT
-	  Escaped   : 5305ms
-	  Unescaped : 91ms
-	  Total     : 5396ms
-
-	Swig
-	  Escaped   : 5202ms
-	  Unescaped : 405ms
-	  Total     : 5607ms
-
-	Underscore
-	  Escaped   : 6045ms
-	  Unescaped : 2729ms
-	  Total     : 8774ms
-
-	Eco
-	  Escaped   : 8238ms
-	  Unescaped : 1003ms
-	  Total     : 9241ms
-
-	EJS
-	  Escaped   : 6527ms
-	  Unescaped : 2835ms
-	  Total     : 9362ms
-
-	Handlebars.js
-	  Escaped   : 8238ms
-	  Unescaped : 2756ms
-	  Total     : 10994ms
-
-	Jade without `with`
-	  Escaped   : 9671ms
-	  Unescaped : 3365ms
-	  Total     : 13036ms
-
-	CoffeeKup
-	  Escaped   : 5082ms
-	  Unescaped : 10555ms
-	  Total     : 15637ms
-
-	Jade
-	  Escaped   : 17778ms
-	  Unescaped : 12013ms
-	  Total     : 29791ms
-
+	Gaikan               ( 2147ms) - fastest
+	Fest                 ( 2535ms) - 18% slower
+	doT                  ( 3524ms) - 64% slower
+	Underscore           ( 5108ms) - 138% slower
+	Handlebars.js        ( 5734ms) - 167% slower
+	ECT                  ( 7223ms) - 236% slower
+	EJS without `with`   ( 8732ms) - 307% slower
+	Dust                 ( 9136ms) - 326% slower
+	Hogan.js             ( 9960ms) - 364% slower
+	Swig                 (10240ms) - 377% slower
+	Eco                  (12292ms) - 473% slower
+	Jade without `with`  (13510ms) - 529% slower
+	EJS                  (14917ms) - 595% slower
+	CoffeeKup            (15319ms) - 614% slower
+	Jade                 (34000ms) - 1484% slower
+	
 ## Usage
 
 	git clone git://github.com/baryshev/template-benchmark.git
