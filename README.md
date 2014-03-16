@@ -56,7 +56,7 @@
 	
 ## Usage
 
-	git clone git://github.com/baryshev/template-benchmark.git
+	git clone git://github.com/Deathspike/template-benchmark.git
 	cd template-benchmark
 	npm install
 	node ./benchmark.js
