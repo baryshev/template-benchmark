@@ -28,84 +28,84 @@
 Rendering 100000 templates:
 
 slm
-  Escaped   : 1051ms
-  Unescaped : 48ms
-  Total     : 1099ms
+  Escaped   : 1101ms
+  Unescaped : 53ms
+  Total     : 1154ms
 
 ECT
-  Escaped   : 1080ms
+  Escaped   : 1159ms
   Unescaped : 60ms
-  Total     : 1140ms
+  Total     : 1219ms
 
 Dust
-  Escaped   : 1444ms
-  Unescaped : 210ms
-  Total     : 1654ms
+  Escaped   : 1329ms
+  Unescaped : 214ms
+  Total     : 1543ms
 
 Hogan.js
-  Escaped   : 1609ms
-  Unescaped : 441ms
-  Total     : 2050ms
+  Escaped   : 1593ms
+  Unescaped : 449ms
+  Total     : 2042ms
 
 Gaikan
-  Escaped   : 1415ms
-  Unescaped : 38ms
-  Total     : 1453ms
+  Escaped   : 1549ms
+  Unescaped : 39ms
+  Total     : 1588ms
 
 Fest
-  Escaped   : 1492ms
-  Unescaped : 149ms
-  Total     : 1641ms
+  Escaped   : 1511ms
+  Unescaped : 166ms
+  Total     : 1677ms
 
 EJS without `with`
-  Escaped   : 2809ms
-  Unescaped : 180ms
-  Total     : 2989ms
+  Escaped   : 2781ms
+  Unescaped : 182ms
+  Total     : 2963ms
 
 doT
-  Escaped   : 2193ms
-  Unescaped : 43ms
-  Total     : 2236ms
+  Escaped   : 1992ms
+  Unescaped : 37ms
+  Total     : 2029ms
 
 Swig
-  Escaped   : 3309ms
-  Unescaped : 278ms
-  Total     : 3587ms
+  Escaped   : 3369ms
+  Unescaped : 256ms
+  Total     : 3625ms
 
 Underscore
-  Escaped   : 1952ms
-  Unescaped : 1143ms
-  Total     : 3095ms
+  Escaped   : 2157ms
+  Unescaped : 1361ms
+  Total     : 3518ms
 
 EJS
-  Escaped   : 4649ms
-  Unescaped : 1262ms
-  Total     : 5911ms
+  Escaped   : 5046ms
+  Unescaped : 1691ms
+  Total     : 6737ms
 
 Eco
-  Escaped   : 4310ms
-  Unescaped : 441ms
-  Total     : 4751ms
+  Escaped   : 4189ms
+  Unescaped : 419ms
+  Total     : 4608ms
 
 Handlebars.js
-  Escaped   : 3594ms
-  Unescaped : 1461ms
-  Total     : 5055ms
+  Escaped   : 3393ms
+  Unescaped : 1438ms
+  Total     : 4831ms
 
 Jade without `with`
-  Escaped   : 5645ms
-  Unescaped : 2097ms
-  Total     : 7742ms
+  Escaped   : 2248ms
+  Unescaped : 409ms
+  Total     : 2657ms
 
 CoffeeKup
-  Escaped   : 2115ms
-  Unescaped : 4164ms
-  Total     : 6279ms
+  Escaped   : 2153ms
+  Unescaped : 4188ms
+  Total     : 6341ms
 
 Jade
-  Escaped   : 9337ms
-  Unescaped : 6236ms
-  Total     : 15573ms
+  Escaped   : 4122ms
+  Unescaped : 1908ms
+  Total     : 6030ms
 ```
 
 ## Usage
