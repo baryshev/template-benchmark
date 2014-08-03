@@ -71,7 +71,7 @@ var samples = [
 	{ name : 'Hogan.js', sample : hogan },
 	{ name : 'Dust', sample : dust },
 	{ name : 'ECT', sample : ect },
-	{ name : 'slm', sample : slm },
+	{ name : 'Slm', sample : slm },
 ];
 
 var runTests = function () {

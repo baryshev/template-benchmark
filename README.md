@@ -13,6 +13,7 @@
 - [Handlebars.js](https://github.com/wycats/handlebars.js/) v2.0.0-alpha.4 ([website](http://handlebarsjs.com/))
 - [Hogan.js](https://github.com/twitter/hogan.js) v3.0.2 ([website](http://twitter.github.com/hogan.js/))
 - [Jade](https://github.com/visionmedia/jade) v1.5.0 ([website](http://jade-lang.com/))
+- [Slm](https://github.com/slm-lang/slm) v0.1.1
 - [Swig](https://github.com/paularmstrong/swig) v1.4.1
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
 
@@ -27,85 +28,85 @@
 ```sh
 Rendering 100000 templates:
 
-slm
-  Escaped   : 1039ms
-  Unescaped : 50ms
-  Total     : 1089ms
+Slm
+  Escaped   : 1059ms
+  Unescaped : 49ms
+  Total     : 1108ms
 
 ECT
-  Escaped   : 1066ms
-  Unescaped : 59ms
-  Total     : 1125ms
+  Escaped   : 1070ms
+  Unescaped : 60ms
+  Total     : 1130ms
 
 Dust
-  Escaped   : 1435ms
-  Unescaped : 219ms
-  Total     : 1654ms
+  Escaped   : 1306ms
+  Unescaped : 229ms
+  Total     : 1535ms
 
 Hogan.js
-  Escaped   : 1445ms
-  Unescaped : 324ms
-  Total     : 1769ms
+  Escaped   : 1529ms
+  Unescaped : 327ms
+  Total     : 1856ms
 
 Gaikan
-  Escaped   : 1368ms
-  Unescaped : 41ms
-  Total     : 1409ms
+  Escaped   : 1291ms
+  Unescaped : 40ms
+  Total     : 1331ms
 
 Fest
-  Escaped   : 1557ms
-  Unescaped : 148ms
-  Total     : 1705ms
+  Escaped   : 1474ms
+  Unescaped : 137ms
+  Total     : 1611ms
 
 EJS without `with`
-  Escaped   : 2157ms
-  Unescaped : 189ms
-  Total     : 2346ms
+  Escaped   : 2044ms
+  Unescaped : 184ms
+  Total     : 2228ms
 
 doT
-  Escaped   : 2198ms
-  Unescaped : 41ms
-  Total     : 2239ms
+  Escaped   : 2069ms
+  Unescaped : 37ms
+  Total     : 2106ms
 
 Swig
-  Escaped   : 3325ms
-  Unescaped : 255ms
-  Total     : 3580ms
+  Escaped   : 3233ms
+  Unescaped : 240ms
+  Total     : 3473ms
 
 Underscore
-  Escaped   : 2129ms
-  Unescaped : 1339ms
-  Total     : 3468ms
+  Escaped   : 2053ms
+  Unescaped : 1295ms
+  Total     : 3348ms
 
 EJS
-  Escaped   : 3580ms
-  Unescaped : 909ms
-  Total     : 4489ms
+  Escaped   : 3230ms
+  Unescaped : 877ms
+  Total     : 4107ms
 
 Eco
-  Escaped   : 4455ms
-  Unescaped : 420ms
-  Total     : 4875ms
+  Escaped   : 4436ms
+  Unescaped : 414ms
+  Total     : 4850ms
 
 Handlebars.js
-  Escaped   : 1966ms
-  Unescaped : 270ms
-  Total     : 2236ms
+  Escaped   : 1927ms
+  Unescaped : 273ms
+  Total     : 2200ms
 
 Jade without `with`
-  Escaped   : 2162ms
-  Unescaped : 445ms
-  Total     : 2607ms
+  Escaped   : 2070ms
+  Unescaped : 438ms
+  Total     : 2508ms
 
 CoffeeKup
-  Escaped   : 2167ms
-  Unescaped : 4240ms
-  Total     : 6407ms
+  Escaped   : 2183ms
+  Unescaped : 4172ms
+  Total     : 6355ms
 
 Jade
-  Escaped   : 4123ms
-  Unescaped : 1983ms
-  Total     : 6106ms
+  Escaped   : 4190ms
+  Unescaped : 2054ms
+  Total     : 6244ms
 ```
 
 ## Usage
