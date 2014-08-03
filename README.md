@@ -12,7 +12,7 @@
 - [Gaikan](https://github.com/Deathspike/gaikan) v1.3.4
 - [Handlebars.js](https://github.com/wycats/handlebars.js/) v1.0.9 ([website](http://handlebarsjs.com/))
 - [Hogan.js](https://github.com/twitter/hogan.js) v2.0.0 ([website](http://twitter.github.com/hogan.js/))
-- [Jade](https://github.com/visionmedia/jade) v0.28.1 ([website](http://jade-lang.com/))
+- [Jade](https://github.com/visionmedia/jade) v1.5.0 ([website](http://jade-lang.com/))
 - [Swig](https://github.com/paularmstrong/swig) v0.13.5
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
 
