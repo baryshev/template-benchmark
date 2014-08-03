@@ -9,7 +9,7 @@
 - [ECT](https://github.com/baryshev/ect) v0.5.9 ([website](http://ectjs.com/))
 - [EJS](https://github.com/visionmedia/ejs) v0.8.3
 - [Fest](https://github.com/mailru/fest) v0.5.4
-- [Gaikan](https://github.com/Deathspike/gaikan) v1.3.4
+- [Gaikan](https://github.com/Deathspike/gaikan) v2.0.2
 - [Handlebars.js](https://github.com/wycats/handlebars.js/) v1.0.9 ([website](http://handlebarsjs.com/))
 - [Hogan.js](https://github.com/twitter/hogan.js) v3.0.2 ([website](http://twitter.github.com/hogan.js/))
 - [Jade](https://github.com/visionmedia/jade) v1.5.0 ([website](http://jade-lang.com/))
