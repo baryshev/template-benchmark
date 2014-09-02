@@ -18,7 +18,7 @@
     "handlebars": "2.0.0-alpha.4",
     "hogan.js": "3.0.2",
     "jade": "1.5.0",
-    "slm": "^0.1.1",
+    "slm": "^0.1.3",
     "swig": "1.4.1",
     "underscore": "1.4.4"
   }
