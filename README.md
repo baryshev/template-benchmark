@@ -3,19 +3,19 @@
 ## Engines
 
 - [CoffeeKup](https://github.com/mauricemach/coffeekup) v0.3.1 ([website](http://coffeekup.org/))
-- [doT](https://github.com/olado/doT) v1.0.2 ([website](http://olado.github.com/doT/))
+- [doT](https://github.com/olado/doT) v1.0.3 ([website](http://olado.github.com/doT/))
 - [Dust](https://github.com/linkedin/dustjs) v1.2.1 ([website](http://linkedin.github.com/dustjs/))
 - [Eco](https://github.com/sstephenson/eco) v1.1.0-rc-3
 - [ECT](https://github.com/baryshev/ect) v0.5.9 ([website](http://ectjs.com/))
 - [EJS](https://github.com/visionmedia/ejs) v1.0.0
 - [Fest](https://github.com/mailru/fest) v0.8.2
 - [Gaikan](https://github.com/Deathspike/gaikan) v2.0.2
-- [Handlebars.js](https://github.com/wycats/handlebars.js/) v2.0.0-alpha.4 ([website](http://handlebarsjs.com/))
+- [Handlebars.js](https://github.com/wycats/handlebars.js/) v2.0.0 ([website](http://handlebarsjs.com/))
 - [Hogan.js](https://github.com/twitter/hogan.js) v3.0.2 ([website](http://twitter.github.com/hogan.js/))
-- [Jade](https://github.com/visionmedia/jade) v1.5.0 ([website](http://jade-lang.com/))
-- [Slm](https://github.com/slm-lang/slm) v0.1.1
-- [Swig](https://github.com/paularmstrong/swig) v1.4.1
-- [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
+- [Jade](https://github.com/visionmedia/jade) v1.8.2 ([website](http://jade-lang.com/))
+- [Slm](https://github.com/slm-lang/slm) v0.1.5
+- [Swig](https://github.com/paularmstrong/swig) v1.4.2
+- [Underscore](https://github.com/documentcloud/underscore) v1.7.0 ([website](http://underscorejs.org/))
 
 ## Test environment
 
