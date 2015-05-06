@@ -17,9 +17,9 @@
     "gaikan": "2.0.2",
     "handlebars": "2.0.0",
     "hogan.js": "3.0.2",
-    "jade": "^1.9.0",
-    "slm": "^0.3.4",
+    "jade": "^1.9.2",
+    "slm": "^0.4.1",
     "swig": "1.4.2",
-    "underscore": "1.7.0"
+    "underscore": "1.8.3"
   }
 }
