@@ -15,7 +15,7 @@
     "ejs": "1.0.0",
     "fest": "0.8.2",
     "gaikan": "2.0.2",
-    "handlebars": "2.0.0",
+    "handlebars": "3.0.3",
     "hogan.js": "3.0.2",
     "jade": "^1.9.2",
     "slm": "^0.4.1",
