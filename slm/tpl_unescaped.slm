@@ -1,0 +1,9 @@
+html
+  head: title ==this.title
+  body
+    p ==this.text
+    - for (var i = 0, p; p = this.projects[i]; i++)
+      a href="${=p.url}" ==p.name
+      p ==p.description
+    - if !this.projects.length
+      . No projects
