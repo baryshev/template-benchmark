@@ -14,12 +14,13 @@
     "ect": "0.4.7",
     "ejs": "0.8.3",
     "fest": "0.5.4",
-    "gaikan": "2.0.0-rc1",
+    "gaikan": "^2.0.0-rc1",
     "handlebars": "1.0.9",
     "hogan.js": "2.0.0",
     "jade": "0.28.1",
     "mustache": "^2.3.0",
     "swig": "0.13.5",
-    "underscore": "1.4.4"
+    "underscore": "1.4.4",
+    "vash": "^0.12.2"
   }
 }

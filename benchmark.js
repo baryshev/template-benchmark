@@ -17,6 +17,7 @@ var coffeekup = require('./coffeekup/coffeekup.js');
 var underscore = require('./underscore/underscore.js');
 var gaikan = require('./gaikan/gaikan.js');
 var mustache = require('./mustache/mustache.js');
+var vash = require('./vash/vash.js');
 
 var test = function(name, sample, cb) {
 	var i = 0;
@@ -72,6 +73,7 @@ var samples = [
 	{ name : 'Gaikan', sample: gaikan },
 	{ name : 'ECT', sample : ect },
 	{ name : 'Mustache', sample : mustache },
+	{ name : 'Vash', sample : vash },
 ];
 
 var results = [];

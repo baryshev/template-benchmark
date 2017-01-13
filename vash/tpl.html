@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>@model.title</title>
+</head>
+<body>
+  <p>@model.text</p>
+  @if(model.projects.length){
+    @model.projects.forEach(function(m){
+      <div>
+        <a href="@m.url">@m.name</a>
+        <p>@m.description</p>
+      </div>
+    })
+  } else {
+    <p>No projects</p>
+  }
+</body>
+</html>
