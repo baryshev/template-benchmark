@@ -15,91 +15,127 @@
 - [Jade](https://github.com/visionmedia/jade) v0.28.1 ([website](http://jade-lang.com/))
 - [Swig](https://github.com/paularmstrong/swig) v0.13.5
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
+- [Nunjucks](https://github.com/mozilla/nunjucks) v3.0.0 ([website](https://mozilla.github.io/nunjucks/))
+- [Vash](https://github.com/kirbysayshi/vash) v0.12.2 ([website](https://github.com/kirbysayshi/vash/))
+- [Mustache](https://github.com/janl/mustache.js) v2.3.0 ([website](https://github.com/janl/mustache.js/))
 
 ## Test environment
 
-- CPU: Intel Core i5 450M 2.4Ghz
-- OS: Ubuntu Server 12.04
-- Node.JS version: 0.8.21
+- CPU: Intel Core i5 4690 3.50Ghz
+- OS: Windows 10
+- Node.JS version: v6.5.0
 
 ## Results
 
-	Rendering 100000 templates:
+Nunjucks
+  Escaped   : 2832ms
+  Unescaped : 2821ms
+  Total     : 5653ms
 
-	ECT
-	  Escaped   : 2180ms
-	  Unescaped : 133ms
-	  Total     : 2313ms
+Vash
+  Escaped   : 2147ms
+  Unescaped : 739ms
+  Total     : 2886ms
 
-	Dust
-	  Escaped   : 2547ms
-	  Unescaped : 363ms
-	  Total     : 2910ms
+Mustache
+  Escaped   : 3400ms
+  Unescaped : 1975ms
+  Total     : 5375ms
 
-	Hogan.js
-	  Escaped   : 3252ms
-	  Unescaped : 758ms
-	  Total     : 4010ms
+ECT
+  Escaped   : 2541ms
+  Unescaped : 78ms
+  Total     : 2619ms
 
-	Gaikan
-	  Escaped   : 4288ms
-	  Unescaped : 85ms
-	  Total     : 4373ms
+Gaikan
+  Escaped   : 1157ms
+  Unescaped : 45ms
+  Total     : 1202ms
 
-	Fest
-	  Escaped   : 4179ms
-	  Unescaped : 265ms
-	  Total     : 4444ms
+Dust
+  Escaped   : 3124ms
+  Unescaped : 286ms
+  Total     : 3410ms
 
-	EJS without `with`
-	  Escaped   : 4526ms
-	  Unescaped : 485ms
-	  Total     : 5011ms
+Hogan.js
+  Escaped   : 3248ms
+  Unescaped : 305ms
+  Total     : 3553ms
 
-	doT
-	  Escaped   : 5329ms
-	  Unescaped : 82ms
-	  Total     : 5411ms
+Fest
+  Escaped   : 1318ms
+  Unescaped : 204ms
+  Total     : 1522ms
 
-	Swig
-	  Escaped   : 5020ms
-	  Unescaped : 407ms
-	  Total     : 5427ms
+EJS without `with`
+  Escaped   : 3619ms
+  Unescaped : 308ms
+  Total     : 3927ms
 
-	Underscore
-	  Escaped   : 5775ms
-	  Unescaped : 2486ms
-	  Total     : 8261ms
+doT
+  Escaped   : 1735ms
+  Unescaped : 45ms
+  Total     : 1780ms
 
-	Eco
-	  Escaped   : 8512ms
-	  Unescaped : 991ms
-	  Total     : 9503ms
+Swig
+  Escaped   : 4158ms
+  Unescaped : 212ms
+  Total     : 4370ms
 
-	EJS
-	  Escaped   : 6316ms
-	  Unescaped : 2734ms
-	  Total     : 9050ms
+Underscore
+  Escaped   : 1592ms
+  Unescaped : 977ms
+  Total     : 2569ms
 
-	Handlebars.js
-	  Escaped   : 7815ms
-	  Unescaped : 2573ms
-	  Total     : 10388ms
+Eco
+  Escaped   : 4750ms
+  Unescaped : 503ms
+  Total     : 5253ms
 
-	Jade without `with`
-	  Escaped   : 8566ms
-	  Unescaped : 2982ms
-	  Total     : 11548ms
+EJS
+  Escaped   : 5223ms
+  Unescaped : 1822ms
+  Total     : 7045ms
 
-	CoffeeKup
-	  Escaped   : 4968ms
-	  Unescaped : 9983ms
-	  Total     : 14951ms
+Handlebars.js
+  Escaped   : 2606ms
+  Unescaped : 1286ms
+  Total     : 3892ms
 
-	Jade
-	  Escaped   : 18330ms
-	  Unescaped : 12095ms
-	  Total     : 30425ms
+Jade without `with`
+  Escaped   : 4757ms
+  Unescaped : 1239ms
+  Total     : 5996ms
+
+CoffeeKup
+  Escaped   : 1880ms
+  Unescaped : 5219ms
+  Total     : 7099ms
+
+Jade
+  Escaped   : 10023ms
+  Unescaped : 6172ms
+  Total     : 16195ms
+
+## Performance Report
+Gaikan               ( 1202ms) - fastest
+Fest                 ( 1522ms) - 27% slower
+doT                  ( 1780ms) - 48% slower
+Underscore           ( 2569ms) - 114% slower
+ECT                  ( 2619ms) - 118% slower
+Vash                 ( 2886ms) - 140% slower
+Dust                 ( 3410ms) - 184% slower
+Hogan.js             ( 3553ms) - 196% slower
+Handlebars.js        ( 3892ms) - 224% slower
+EJS without `with`   ( 3927ms) - 227% slower
+Swig                 ( 4370ms) - 264% slower
+Eco                  ( 5253ms) - 337% slower
+Mustache             ( 5375ms) - 347% slower
+Nunjucks             ( 5653ms) - 370% slower
+Jade without `with`  ( 5996ms) - 399% slower
+EJS                  ( 7045ms) - 486% slower
+CoffeeKup            ( 7099ms) - 491% slower
+Jade                 (16195ms) - 1247% slower
 
 ## Usage
 
