@@ -139,7 +139,7 @@ Jade                 (16195ms) - 1247% slower
 
 ## Usage
 
-	git clone git://github.com/baryshev/template-benchmark.git
+	git clone https://github.com/minicacristi/template-benchmark.git
 	cd template-benchmark
 	npm install
 	node ./benchmark.js
