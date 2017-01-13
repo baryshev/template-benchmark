@@ -18,6 +18,7 @@ var underscore = require('./underscore/underscore.js');
 var gaikan = require('./gaikan/gaikan.js');
 var mustache = require('./mustache/mustache.js');
 var vash = require('./vash/vash.js');
+var nunjucks = require('./nunjucks/nunjucks.js');
 
 var test = function(name, sample, cb) {
 	var i = 0;
@@ -74,6 +75,7 @@ var samples = [
 	{ name : 'ECT', sample : ect },
 	{ name : 'Mustache', sample : mustache },
 	{ name : 'Vash', sample : vash },
+	{ name : 'Nunjucks', sample : nunjucks },
 ];
 
 var results = [];
