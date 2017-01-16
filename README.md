@@ -18,6 +18,7 @@
 - [Nunjucks](https://github.com/mozilla/nunjucks) v3.0.0 ([website](https://mozilla.github.io/nunjucks/))
 - [Vash](https://github.com/kirbysayshi/vash) v0.12.2 ([website](https://github.com/kirbysayshi/vash/))
 - [Mustache](https://github.com/janl/mustache.js) v2.3.0 ([website](https://github.com/janl/mustache.js/))
+- [Pug](https://github.com/pugjs/pug) v2.0.0-beta6 ([website](https://pugjs.org/api/getting-started.html))
 
 ## Test environment
 
@@ -26,116 +27,121 @@
 - Node.JS version: v6.5.0
 
 ## Performance Report
-	Gaikan               ( 1202ms) - fastest
-	Fest                 ( 1522ms) - 27% slower
-	doT                  ( 1780ms) - 48% slower
-	Underscore           ( 2569ms) - 114% slower
-	ECT                  ( 2619ms) - 118% slower
-	Vash                 ( 2886ms) - 140% slower
-	Dust                 ( 3410ms) - 184% slower
-	Hogan.js             ( 3553ms) - 196% slower
-	Handlebars.js        ( 3892ms) - 224% slower
-	EJS without `with`   ( 3927ms) - 227% slower
-	Swig                 ( 4370ms) - 264% slower
-	Eco                  ( 5253ms) - 337% slower
-	Mustache             ( 5375ms) - 347% slower
-	Nunjucks             ( 5653ms) - 370% slower
-	Jade without `with`  ( 5996ms) - 399% slower
-	EJS                  ( 7045ms) - 486% slower
-	CoffeeKup            ( 7099ms) - 491% slower
-	Jade                 (16195ms) - 1247% slower
+	Gaikan               ( 1370ms) - fastest
+	Fest                 ( 1679ms) - 23% slower
+	doT                  ( 2106ms) - 54% slower
+	ECT                  ( 2864ms) - 109% slower
+	Pug                  ( 3212ms) - 134% slower
+	Vash                 ( 3311ms) - 142% slower
+	Underscore           ( 3737ms) - 173% slower
+	Dust                 ( 3777ms) - 176% slower
+	Hogan.js             ( 3789ms) - 177% slower
+	EJS without `with`   ( 4293ms) - 213% slower
+	Handlebars.js        ( 4442ms) - 224% slower
+	Swig                 ( 5755ms) - 320% slower
+	Mustache             ( 5775ms) - 322% slower
+	Nunjucks             ( 6329ms) - 362% slower
+	Jade without `with`  ( 6988ms) - 410% slower
+	Eco                  ( 7570ms) - 453% slower
+	EJS                  ( 8180ms) - 497% slower
+	CoffeeKup            ( 8514ms) - 521% slower
+	Jade                 (18966ms) - 1284% slower
 
 ## Results
+	Pug
+	  Escaped   : 3095ms
+	  Unescaped : 117ms
+	  Total     : 3212ms
 
 	Nunjucks
-	  Escaped   : 2832ms
-	  Unescaped : 2821ms
-	  Total     : 5653ms
+	  Escaped   : 3177ms
+	  Unescaped : 3152ms
+	  Total     : 6329ms
 
 	Vash
-	  Escaped   : 2147ms
-	  Unescaped : 739ms
-	  Total     : 2886ms
+	  Escaped   : 2463ms
+	  Unescaped : 848ms
+	  Total     : 3311ms
 
 	Mustache
-	  Escaped   : 3400ms
-	  Unescaped : 1975ms
-	  Total     : 5375ms
+	  Escaped   : 3708ms
+	  Unescaped : 2067ms
+	  Total     : 5775ms
 
 	ECT
-	  Escaped   : 2541ms
-	  Unescaped : 78ms
-	  Total     : 2619ms
+	  Escaped   : 2775ms
+	  Unescaped : 89ms
+	  Total     : 2864ms
 
 	Gaikan
-	  Escaped   : 1157ms
-	  Unescaped : 45ms
-	  Total     : 1202ms
+	  Escaped   : 1318ms
+	  Unescaped : 52ms
+	  Total     : 1370ms
 
 	Dust
-	  Escaped   : 3124ms
-	  Unescaped : 286ms
-	  Total     : 3410ms
+	  Escaped   : 3462ms
+	  Unescaped : 315ms
+	  Total     : 3777ms
 
 	Hogan.js
-	  Escaped   : 3248ms
-	  Unescaped : 305ms
-	  Total     : 3553ms
+	  Escaped   : 3455ms
+	  Unescaped : 334ms
+	  Total     : 3789ms
 
 	Fest
-	  Escaped   : 1318ms
-	  Unescaped : 204ms
-	  Total     : 1522ms
+	  Escaped   : 1448ms
+	  Unescaped : 231ms
+	  Total     : 1679ms
 
 	EJS without `with`
-	  Escaped   : 3619ms
-	  Unescaped : 308ms
-	  Total     : 3927ms
+	  Escaped   : 3930ms
+	  Unescaped : 363ms
+	  Total     : 4293ms
 
 	doT
-	  Escaped   : 1735ms
-	  Unescaped : 45ms
-	  Total     : 1780ms
+	  Escaped   : 2038ms
+	  Unescaped : 68ms
+	  Total     : 2106ms
 
 	Swig
-	  Escaped   : 4158ms
-	  Unescaped : 212ms
-	  Total     : 4370ms
+	  Escaped   : 5488ms
+	  Unescaped : 267ms
+	  Total     : 5755ms
 
 	Underscore
-	  Escaped   : 1592ms
-	  Unescaped : 977ms
-	  Total     : 2569ms
+	  Escaped   : 2549ms
+	  Unescaped : 1188ms
+	  Total     : 3737ms
 
 	Eco
-	  Escaped   : 4750ms
-	  Unescaped : 503ms
-	  Total     : 5253ms
+	  Escaped   : 6942ms
+	  Unescaped : 628ms
+	  Total     : 7570ms
 
 	EJS
-	  Escaped   : 5223ms
-	  Unescaped : 1822ms
-	  Total     : 7045ms
+	  Escaped   : 6118ms
+	  Unescaped : 2062ms
+	  Total     : 8180ms
 
 	Handlebars.js
-	  Escaped   : 2606ms
-	  Unescaped : 1286ms
-	  Total     : 3892ms
+	  Escaped   : 3007ms
+	  Unescaped : 1435ms
+	  Total     : 4442ms
 
 	Jade without `with`
-	  Escaped   : 4757ms
-	  Unescaped : 1239ms
-	  Total     : 5996ms
+	  Escaped   : 5482ms
+	  Unescaped : 1506ms
+	  Total     : 6988ms
 
 	CoffeeKup
-	  Escaped   : 1880ms
-	  Unescaped : 5219ms
-	  Total     : 7099ms
+	  Escaped   : 2294ms
+	  Unescaped : 6220ms
+	  Total     : 8514ms
 
 	Jade
-	  Escaped   : 10023ms
-	  Unescaped : 6172ms
-	  Total     : 16195ms
+	  Escaped   : 11757ms
+	  Unescaped : 7209ms
+	  Total     : 18966ms
 
 ## Usage
 
