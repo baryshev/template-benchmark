@@ -19,6 +19,7 @@
     "hogan.js": "2.0.0",
     "jade": "0.28.1",
     "mustache": "^2.3.0",
+    "pug": "^2.0.0-beta6",
     "swig": "0.13.5",
     "underscore": "1.4.4",
     "vash": "^0.12.2"
