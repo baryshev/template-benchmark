@@ -16,6 +16,7 @@ var handlebars = require('./handlebars/handlebars.js');
 var coffeekup = require('./coffeekup/coffeekup.js');
 var underscore = require('./underscore/underscore.js');
 var gaikan = require('./gaikan/gaikan.js');
+var r10 = require('./r10/r10.js');
 
 var test = function(name, sample, cb) {
 	var i = 0;
@@ -67,6 +68,7 @@ var samples = [
 	{ name : 'EJS without `with`', sample : ejsWithoutWith },
 	{ name : 'Fest', sample : fest },
 	{ name : 'Gaikan', sample: gaikan },
+	{ name : 'R10', sample: r10 },
 	{ name : 'Hogan.js', sample : hogan },
 	{ name : 'Dust', sample : dust },
 	{ name : 'ECT', sample : ect }
