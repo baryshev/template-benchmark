@@ -25,6 +25,11 @@
 ## Results
 
 	Rendering 100000 templates:
+	
+	Marko
+	  Escaped   : 1086ms
+	  Unescaped : 152ms
+	  Total     : 1238ms
 
 	ECT
 	  Escaped   : 2180ms
@@ -100,6 +105,7 @@
 	  Escaped   : 18330ms
 	  Unescaped : 12095ms
 	  Total     : 30425ms
+	  
 
 ## Usage
 
