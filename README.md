@@ -15,6 +15,7 @@
 - [Jade](https://github.com/visionmedia/jade) v0.28.1 ([website](http://jade-lang.com/))
 - [Swig](https://github.com/paularmstrong/swig) v0.13.5
 - [Underscore](https://github.com/documentcloud/underscore) v1.4.4 ([website](http://underscorejs.org/))
+- [Marko](https://github.com/marko-js/marko) v4.5.2([website](http://markojs.com/))
 
 ## Test environment
 
@@ -25,6 +26,11 @@
 ## Results
 
 	Rendering 100000 templates:
+	
+	Marko
+	  Escaped   : 1086ms
+	  Unescaped : 152ms
+	  Total     : 1238ms
 
 	ECT
 	  Escaped   : 2180ms
@@ -100,6 +106,7 @@
 	  Escaped   : 18330ms
 	  Unescaped : 12095ms
 	  Total     : 30425ms
+	  
 
 ## Usage
 
