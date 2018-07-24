@@ -1,23 +1,19 @@
 var fs = require('fs');
 var ejs = require('ejs');
 var compiled;
-var tplData;
 
-module.exports.prepare = function (data, done) {
+module.exports.prepare = function (done) {
 	var str = fs.readFileSync(__dirname + '/tpl_escaped.ejs', 'utf8');
-	tplData = data;
 	compiled = ejs.compile(str);
 	done();
 };
 
-module.exports.prepareUnescaped = function (data, done) {
+module.exports.prepareUnescaped = function (done) {
 	var str = fs.readFileSync(__dirname + '/tpl_unescaped.ejs', 'utf8');
-	tplData = data;
 	compiled = ejs.compile(str);
 	done();
 };
 
-module.exports.step = function (done) {
-	var html = compiled(tplData);
-	done(undefined, html);
+module.exports.step = function (data, done) {
+    done(null, compiled(data));
 };

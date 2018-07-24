@@ -1,24 +1,16 @@
 var swig = require('swig');
 var compiled;
-var tplData;
 
-swig.init({
-	root: __dirname
-});
-
-module.exports.prepare = function (data, done) {
-	tplData = data;
-	compiled = swig.compileFile('./tpl_escaped.swig');
+module.exports.prepare = function (done) {
+	compiled = swig.compileFile(__dirname + '/tpl_escaped.swig');
 	done();
 };
 
-module.exports.prepareUnescaped = function (data, done) {
-	tplData = data;
-	compiled = swig.compileFile('./tpl_unescaped.swig');
+module.exports.prepareUnescaped = function (done) {
+	compiled = swig.compileFile(__dirname + '/tpl_unescaped.swig');
 	done();
 };
 
-module.exports.step = function (done) {
-	var html = compiled.render(tplData);
-	done(undefined, html);
+module.exports.step = function (data, done) {
+    done(null, compiled(data));
 };

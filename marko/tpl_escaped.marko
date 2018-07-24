@@ -1,0 +1,10 @@
+html
+	head
+		title -- ${input.title}
+	body
+		p -- ${input.text}
+		if(input.projects.length)
+			a for(project in input.projects) -- ${project.name}
+				p -- ${project.description}
+		else
+			-- No Projects

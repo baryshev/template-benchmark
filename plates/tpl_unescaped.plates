@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title id="title"></title>
+	</head>
+	<body>
+		<p id="text"></p>
+		<div id="projects">
+			<a href="" class="name"></a>
+			<p class="description"></p>
+		</div>
+	</body>
+</html>

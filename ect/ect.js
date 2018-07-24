@@ -1,25 +1,19 @@
 var ECT = require('ect');
 var renderer;
-var tplData;
 var tpl;
 
-renderer = new ECT({ root: __dirname, cache: true, debug: true });
+renderer = new ECT({ root: __dirname, cache: true, debug: false });
 
-module.exports.prepare = function (data, done) {
-	tplData = data;
+module.exports.prepare = function (done) {
 	tpl = 'tpl_escaped.ect';
-	renderer.render(tpl, tplData);
-	done();
+    done();
 };
 
-module.exports.prepareUnescaped = function (data, done) {
-	tplData = data;
+module.exports.prepareUnescaped = function (done) {
 	tpl = 'tpl_unescaped.ect';
-	renderer.render(tpl, tplData);
-	done();
+    done();
 };
 
-module.exports.step = function (done) {
-	var html = renderer.render(tpl, tplData);
-	done(undefined, html);
+module.exports.step = function (data, done) {
+    done(null, renderer.render(tpl, data));
 };

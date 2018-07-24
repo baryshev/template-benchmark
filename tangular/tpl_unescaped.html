@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>{{title | raw}}</title>
+	</head>
+	<body>
+		<p>{{text | raw}}</p>
+		{{if projects.length > 0}}
+		{{foreach project in projects}}
+			<a href="{{project.url | raw}}">{{project.name | raw}}</a>
+			<p>{{project.description | raw}}</p>
+		{{end}}
+		{{else}}
+			No projects
+		{{fi}}
+	</body>
+</html>

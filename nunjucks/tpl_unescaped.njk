@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>{{ title|safe }}</title>
+	</head>
+	<body>
+		<p>{{ text|safe }}</p>
+		{% if projects.length %}
+			{% for project in projects %}
+				<a href="{{ project.url|safe }}">{{ project.name|safe }}</a>
+				<p>{{ project.description|safe }}</p>
+			{% endfor %}
+		{% else %}
+			No projects
+		{% endif %}
+	</body>
+</html>

@@ -1,20 +1,16 @@
 var gaikan = require('gaikan');
 var compiled;
-var tplData;
 
-module.exports.prepare = function (data, done) {
-	tplData = data;
-	compiled = gaikan.compileFile('tpl_escaped', 'gaikan', undefined, true);
+module.exports.prepare = function (done) {
+	compiled = gaikan.compileFromFile(__dirname + '/tpl_escaped.html');
 	done();
 };
 
-module.exports.prepareUnescaped = function (data, done) {
-	tplData = data;
-	compiled = gaikan.compileFile('tpl_unescaped', 'gaikan', undefined, true);
+module.exports.prepareUnescaped = function (done) {
+	compiled = gaikan.compileFromFile(__dirname + '/tpl_unescaped.html');
 	done();
 };
 
-module.exports.step = function (done) {
-	var html = compiled(tplData);
-	done(undefined, html);
+module.exports.step = function (data, done) {
+    done(null, compiled(gaikan, data));
 };

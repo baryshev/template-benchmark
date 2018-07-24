@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>{%=o.title%}</title>
+	</head>
+	<body>
+		<p>{%=o.text%}</p>
+		{% for (var i=0; i<o.projects.length; i++) { %}
+			<a href="{%=o.projects[i].url%}">{%=o.projects[i].name%}</a>
+			<p>{%=o.projects[i].description%}</p>
+        {% } %}
+		{% if (o.projects.length <= 0) { %}
+			No projects
+        {% } %}
+	</body>
+</html>
