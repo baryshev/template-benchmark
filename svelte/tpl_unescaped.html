@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+	<title>{{{title}}}</title>
+</head>
+<body>
+	<p>{{{text}}}</p>
+	{{#each projects as project}}
+		<a href="{{project.url}}">{{{project.name}}}</a>
+		<p>{{{project.description}}}</p>
+	{{/each}}
+	{{#if !projects}}
+		No projects
+	{{/if}}
+	</body>
+</html>

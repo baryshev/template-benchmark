@@ -1,24 +1,24 @@
 var fs = require('fs');
 var coffeekup = require('coffeekup');
 var compiled;
-var tplData;
 
-module.exports.prepare = function (data, done) {
+module.exports.prepare = function (done) {
 	var str = fs.readFileSync(__dirname + '/tpl_escaped.coffeekup', 'utf8');
-	tplData = data;
 	compiled = coffeekup.compile(str);
-	done();
+    done();
 };
 
-module.exports.prepareUnescaped = function (data, done) {
+module.exports.prepareUnescaped = function (done) {
 	var str = fs.readFileSync(__dirname + '/tpl_unescaped.coffeekup', 'utf8');
-	tplData = data;
-	tplData.autoescape = true;
 	compiled = coffeekup.compile(str);
-	done();
+    done();
 };
 
-module.exports.step = function (done) {
-	var html = compiled(tplData);
-	done(undefined, html);
+module.exports.step = function (data, done) {
+    done(null, compiled(data));
+};
+
+module.exports.stepUnescaped = function (data, done) {
+    data.autoescape = true;
+    done(null, compiled(data));
 };

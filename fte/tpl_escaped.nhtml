@@ -1,0 +1,18 @@
+<#@ context 'data' #>
+<#@ noIndent #>
+<html>
+	<head>
+		<title>!{data.title}</title>
+	</head>
+	<body>
+		<p>!{data.text}</p>
+		<#- if (data.projects.length) { -#>
+			<#- for (var i = 0; i < data.projects.length; i++) { -#>
+				<a href="!{data.projects[i].url}">!{data.projects[i].name}</a>
+				<p>!{data.projects[i].description}</p>
+			<#- } -#>
+		<#- } else { -#>
+			No projects
+		<#- } -#>
+	</body>
+</html>
